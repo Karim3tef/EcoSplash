@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <title>EcoSplash</title>
+</head>
+<body>
+    <div class="fish-end">
+        <img src="img/water-pollution.gif" alt="sorry">
+    </div>
+    <div class="map_container">
+        <button id="locate-button"><i class="fa fa-map-marker" aria-hidden="true"></i>
+        </button>
+        <input id="place-search" type="text" placeholder="Search for a place">
+        <div id="map"></div>
+    </div>
+    <div class="left_menu">
+        <ul class="Special_Features">
+            <div class="showdata">Show Data</div>
+            <hr class="custom-line">
+            <li>Water Quality</li><input type="checkbox" id="water_check" name="checkbox"><br>
+            <li>Endangered Species</li><input type="checkbox" id="endangered_check" name="checkbox"><br>
+            <li>Dangerous Animal</li><input type="checkbox" id="dangerous_check" name="checkbox"><br>
+            <li>Chemicals</li><input type="checkbox" id="chemicals_check" name="checkbox"><br>
+            <li>Educational Section</li><button class="educate"><img class="edu" src="https://img.icons8.com/ios/50/learn-more.png" alt="learn-more"/></button>
+            <div id="marker-details" class="marker-details">
+                <!-- Content will be dynamically added here -->
+                <button class="close-button" id="close-marker-details">Close</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p style="width: 480px;color:#000" class="tips"><span style="font-weight: bold;font-size: larger;">Tips to help us to preserve Marine life.</span>
+                        <br>Respect Marine Life: Do not collect or remove any marine organisms, shells, or coral souvenirs. Leave the underwater environment as you found it.
+                        Dispose of Trash Properly: Dispose of your trash, including plastic waste, in designated bins on the shore. Participate in beach cleanups if they are organized in your area.
+
+                        Reduce Single-Use Plastics: Minimize your use of single-use plastics, such as plastic bottles and bags, to prevent marine pollution. Carry a reusable water bottle and shopping bag.
+
+                        Responsible boating and fishing: adhering to regulations and guidelines to prevent overfishing, safeguarding marine ecosystems, and ensuring sustainable practices for the long-term health of aquatic environments.
+
+                        Using non-harmful fishing methods: like sustainable gear and avoiding harmful practices such as using poisons or bombs, helps protect marine ecosystems and maintain fish populations for future generations.
+
+                        Remember that your actions, even as an individual swimmer, can have a positive impact on the preservation of marine species and ecosystems. By adopting responsible and sustainable practices, you can contribute to the long-term health and conservation of the Red Sea and other precious marine environments.
+                    </p>
+                    <iframe class="edu_video" width="502" height="257" src="https://www.youtube.com/embed/Om42Lppkd9w" title="Water pollution | Water Contamination | Video for kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </ul>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy2cJNpLtSWMGdfMIjtugw89r5FUSAOaE&callback=initMap" async defer></script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>
